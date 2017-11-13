@@ -4,11 +4,11 @@
 #include <cassert>
 #include <SDL.h>
 
-SdlCanvas::SdlCanvas(int width_pixels, int height_pixels) {
+SdlCanvas::SdlCanvas(int width_pixels, int height_pixels, std::string name) {
   if (SDL_Init(SDL_INIT_VIDEO) != 0) {
     std::cout << "SDL_Init Error: " << SDL_GetError() << std::endl;
   }
-  window_ = SDL_CreateWindow("Hello World!", SDL_WINDOWPOS_CENTERED,
+  window_ = SDL_CreateWindow(name.c_str(), SDL_WINDOWPOS_CENTERED,
                              SDL_WINDOWPOS_CENTERED, width_pixels,
                              height_pixels, SDL_WINDOW_SHOWN);
   if (window_ == nullptr) {

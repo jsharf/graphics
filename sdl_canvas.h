@@ -3,12 +3,14 @@
 
 #include "graphics/canvas.h"
 
+#include <string>
+
 struct SDL_Window;
 struct SDL_Renderer;
 
 class SdlCanvas : public Canvas {
  public:
-  SdlCanvas(int width_pixels, int height_pixels);
+  SdlCanvas(int width_pixels, int height_pixels, std::string name = "Hello World");
   // This lets you draw a point.
   void DrawPointAtPixel(int i, int j) override;
   int GetWidthPixels() const override;
