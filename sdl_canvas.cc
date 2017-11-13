@@ -46,12 +46,12 @@ void SdlCanvas::DrawTriangle(Triangle2 triangle) {
   a = scale * a;
   b = scale * b;
   c = scale * c;
-  a.i += 320;
-  a.j += 240;
-  b.i += 320;
-  b.j += 240;
-  c.i += 320;
-  c.j += 240;
+  a.i += GetWidthPixels()/2;
+  a.j += GetHeightPixels()/2;
+  b.i += GetWidthPixels()/2;
+  b.j += GetHeightPixels()/2;
+  c.i += GetWidthPixels()/2;
+  c.j += GetHeightPixels()/2;
   //std::cout << "i:" << a.i << ", j:" << a.j << std::endl;
   assert(0 == SDL_RenderDrawLine(renderer_, a.i, a.j, b.i, b.j));
   assert(0 == SDL_RenderDrawLine(renderer_, b.i, b.j, c.i, c.j));
