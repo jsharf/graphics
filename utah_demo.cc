@@ -4,7 +4,7 @@
 #include <vector>
 #include <math.h>
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 #include "graphics/types.h"
 #include "graphics/scene.h"

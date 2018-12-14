@@ -83,9 +83,10 @@ cc_library(
       ":canvas",
       ":types",
       "//math/geometry:vector",
+      "@linux_sdl//:sdl2_headers",
   ],
   copts = [
-      "-I/Library/Frameworks/SDL2.framework/Headers",
+      # "-I/Library/Frameworks/SDL2.framework/Headers",
       "-D_THREAD_SAFE",
   ],
   linkopts = [
@@ -113,9 +114,10 @@ cc_binary(
       ":types",
       ":utah_data",
       "//math/geometry:matrix4",
+      "@linux_sdl//:sdl2_headers",
   ],
   copts = [
-      "-I/Library/Frameworks/SDL2.framework/Headers",
+      #"-I/Library/Frameworks/SDL2.framework/Headers",
   ],
   linkopts = ["-lm"],
   linkstatic = 1,

@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <cassert>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 SdlCanvas::SdlCanvas(int width_pixels, int height_pixels, std::string name) {
   if (SDL_Init(SDL_INIT_VIDEO) != 0) {
