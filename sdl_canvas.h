@@ -1,7 +1,7 @@
 #ifndef SDL_CANVAS_H
 #define SDL_CANVAS_H
 
-#include "graphics/canvas.h"
+#include "canvas.h"
 
 #include <string>
 

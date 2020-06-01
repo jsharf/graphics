@@ -1,6 +1,6 @@
 #ifndef CANVAS_H
 #define CANVAS_H
-#include "graphics/types.h"
+#include "types.h"
 
 // This class is an interface to generalize over all 2-dimensional canvases.
 // This is a target for rendering (3D polygons get perspective-transformed to 2D

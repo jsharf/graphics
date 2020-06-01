@@ -1,4 +1,4 @@
-#include "graphics/perspective_camera.h"
+#include "perspective_camera.h"
 
 #include <iostream>
 #include <vector>

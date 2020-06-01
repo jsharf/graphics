@@ -1,9 +1,9 @@
 #ifndef PERSPECTIVE_CAMERA_H
 #define PERSPECTIVE_CAMERA_H
-#include "graphics/camera.h"
-#include "graphics/types.h"
-#include "math/geometry/vector.h"
-#include "math/geometry/matrix4.h"
+#include "camera.h"
+#include "types.h"
+#include "plasticity/geometry/vector.h"
+#include "plasticity/geometry/matrix4.h"
 
 class PerspectiveCamera : public Camera {
  public:

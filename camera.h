@@ -1,9 +1,9 @@
 #ifndef CAMERA_H
 #define CAMERA_H 
-#include "graphics/types.h"
-#include "graphics/canvas.h"
-#include "graphics/scene.h"
-#include "math/geometry/matrix4.h"
+#include "types.h"
+#include "canvas.h"
+#include "scene.h"
+#include "plasticity/geometry/matrix4.h"
 
 class Camera {
   public:

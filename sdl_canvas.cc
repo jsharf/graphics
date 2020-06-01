@@ -1,4 +1,4 @@
-#include "graphics/sdl_canvas.h"
+#include "sdl_canvas.h"
 
 #include <iostream>
 #include <cassert>

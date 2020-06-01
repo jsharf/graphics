@@ -1,10 +1,10 @@
 #ifndef CAMERA_3D_H
 #define CAMERA_3D_H
 
-#include "graphics/camera.h"
-#include "graphics/scene.h"
-#include "graphics/canvas.h"
-#include "graphics/sdl_canvas.h"
+#include "camera.h"
+#include "scene.h"
+#include "canvas.h"
+#include "sdl_canvas.h"
 
 class Camera3d : public Camera {
  public:

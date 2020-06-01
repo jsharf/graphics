@@ -1,4 +1,4 @@
-#include "graphics/utah_teapot.h"
+#include "utah_teapot.h"
 
 #include <iostream>
 #include <vector>
@@ -6,12 +6,12 @@
 
 #include <SDL2/SDL.h>
 
-#include "graphics/types.h"
-#include "graphics/scene.h"
-#include "graphics/perspective_camera.h"
-#include "graphics/camera_3d.h"
-#include "graphics/sdl_canvas.h"
-#include "math/geometry/matrix4.h"
+#include "types.h"
+#include "scene.h"
+#include "perspective_camera.h"
+#include "camera_3d.h"
+#include "sdl_canvas.h"
+#include "plasticity/geometry/matrix4.h"
 
 using Quad = std::tuple<Vector3, Vector3, Vector3, Vector3>;
 
