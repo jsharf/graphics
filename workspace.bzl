@@ -7,6 +7,7 @@ def repo():
     name = "plasticity",
     remote = "https://github.com/jsharf/plasticity.git",
     commit = "a3e7f213251f4f6b4904be6ea6fde93d9519e1ce",
+    shallow_since = "1590994780 -0700"
   )
   # Import SDL2.
   http_archive(
