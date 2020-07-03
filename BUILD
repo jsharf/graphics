@@ -10,6 +10,7 @@ cc_library(
   name = "camera",
   hdrs = ["camera.h"],
   visibility = ["//visibility:public"],
+  copt = ["-Iexternal/"],
   deps = [
       ":canvas",
       ":scene",
@@ -27,6 +28,7 @@ cc_library(
 cc_library(
   name = "types",
   hdrs = ["types.h"],
+  copts = ["-Iexternal/"],
   visibility = ["//visibility:public"],
   deps = [
     "@plasticity//geometry:vector",
@@ -38,6 +40,7 @@ cc_library(
   hdrs = ["perspective_camera.h"],
   visibility = ["//visibility:public"],
   srcs = ["perspective_camera.cc"],
+  copt = ["-Iexternal/"],
   deps = [
       ":camera",
       ":canvas",
@@ -75,6 +78,7 @@ cc_library(
   ],
   copts = [
       "-D_THREAD_SAFE",
+      "-Iexternal/",
   ],
 )
 
@@ -89,6 +93,7 @@ cc_library(
 cc_binary(
   name = "utah_demo",
   srcs = ["utah_demo.cc"],
+  copts = ["-Iexternal/"],
   deps = [
       ":sdl_canvas",
       ":scene",
