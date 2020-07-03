@@ -21,6 +21,7 @@ class SdlCanvas : public Canvas {
   void Render() override;
   void Clear() override;
   SDL_Renderer *renderer() { return renderer_; }
+  SDL_Window *window() { return window_; }
 
  private:
   SDL_Window *window_;
