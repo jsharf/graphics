@@ -14,10 +14,27 @@ SdlCanvas::SdlCanvas(int width_pixels, int height_pixels, std::string name) {
   if (window_ == nullptr) {
     std::cout << "SDL_Create Window Error: " << SDL_GetError() << std::endl;
   }
-  renderer_ = SDL_CreateRenderer(window_, -1, 0);
+  renderer_ = SDL_CreateRenderer(window_, -1, SDL_RENDERER_ACCELERATED);
   if (renderer_ == nullptr) {
     std::cout << "SDL_CreateRenderer Error: " << SDL_GetError() << std::endl;
   }
+}
+
+void SdlCanvas::Draw24BitRgbImage(void *rgb_image, int width, int height, int depth) {
+  SDL_Surface * image = SDL_CreateRGBSurfaceFrom(rgb_image,
+                                      width,
+                                      height,
+                                      24,
+                                      3 * width,
+                                      /*rmask=*/0xff0000,
+                                      /*gmask=*/0x00ff00,
+                                      /*bmask=*/0x0000ff,
+                                      /*amask=*/0);
+  SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer_, image);
+  SDL_RenderCopy(renderer_, texture, NULL, NULL);
+  SDL_RenderPresent(renderer_);
+  SDL_DestroyTexture(texture);
+  SDL_FreeSurface(image);
 }
 
 void SdlCanvas::DrawPointAtPixel(int i, int j) {
