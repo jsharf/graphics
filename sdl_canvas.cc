@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <cassert>
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 SdlCanvas::SdlCanvas(int width_pixels, int height_pixels, std::string name) {
   if (SDL_Init(SDL_INIT_VIDEO) != 0) {
@@ -14,7 +14,7 @@ SdlCanvas::SdlCanvas(int width_pixels, int height_pixels, std::string name) {
   if (window_ == nullptr) {
     std::cout << "SDL_Create Window Error: " << SDL_GetError() << std::endl;
   }
-  renderer_ = SDL_CreateRenderer(window_, -1, SDL_RENDERER_ACCELERATED);
+  renderer_ = SDL_CreateRenderer(window_, -1, 0);
   if (renderer_ == nullptr) {
     std::cout << "SDL_CreateRenderer Error: " << SDL_GetError() << std::endl;
   }
