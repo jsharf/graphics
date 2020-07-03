@@ -3,6 +3,7 @@ cc_library(
   name = "canvas",
   hdrs = ["canvas.h"],
   visibility = ["//visibility:public"],
+  deps = [":types"],
 )
 
 cc_library(
