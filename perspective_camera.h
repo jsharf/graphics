@@ -2,8 +2,8 @@
 #define PERSPECTIVE_CAMERA_H
 #include "camera.h"
 #include "types.h"
-#include "external/plasticity/geometry/vector.h"
-#include "external/plasticity/geometry/matrix4.h"
+#include "plasticity/geometry/vector.h"
+#include "plasticity/geometry/matrix4.h"
 
 class PerspectiveCamera : public Camera {
  public:

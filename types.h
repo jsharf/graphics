@@ -1,7 +1,7 @@
 #include <tuple>
 #include <array>
 
-#include "external/plasticity/geometry/vector.h"
+#include "plasticity/geometry/vector.h"
 
 using Number = double;
 

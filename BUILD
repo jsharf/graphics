@@ -38,7 +38,6 @@ cc_library(
   hdrs = ["perspective_camera.h"],
   visibility = ["//visibility:public"],
   srcs = ["perspective_camera.cc"],
-  copts = ["-Iexternal/"],
   deps = [
       ":camera",
       ":canvas",
@@ -76,7 +75,6 @@ cc_library(
   ],
   copts = [
       "-D_THREAD_SAFE",
-      "-Iexternal/",
   ],
 )
 
@@ -101,7 +99,6 @@ cc_binary(
       "@linux_sdl//:sdl2",
       "@plasticity//geometry:matrix4",
   ],
-  copts = ["-Iexternal/"],
   linkopts = ["-lm"],
   linkstatic = 1,
 )
