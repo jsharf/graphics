@@ -10,7 +10,7 @@ cc_library(
   name = "camera",
   hdrs = ["camera.h"],
   visibility = ["//visibility:public"],
-  copt = ["-Iexternal/"],
+  copts = ["-Iexternal/"],
   deps = [
       ":canvas",
       ":scene",
@@ -40,7 +40,7 @@ cc_library(
   hdrs = ["perspective_camera.h"],
   visibility = ["//visibility:public"],
   srcs = ["perspective_camera.cc"],
-  copt = ["-Iexternal/"],
+  copts = ["-Iexternal/"],
   deps = [
       ":camera",
       ":canvas",
