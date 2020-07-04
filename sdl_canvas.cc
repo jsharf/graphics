@@ -20,7 +20,7 @@ SdlCanvas::SdlCanvas(int width_pixels, int height_pixels, std::string name) {
   }
 }
 
-void SdlCanvas::Draw24BitRgbImage(void *rgb_image, int width, int height, int depth) {
+void SdlCanvas::Draw24BitRgbImage(void *rgb_image, int width, int height) {
   SDL_Surface * image = SDL_CreateRGBSurfaceFrom(rgb_image,
                                       width,
                                       height,
