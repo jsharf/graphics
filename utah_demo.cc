@@ -11,7 +11,7 @@
 #include "perspective_camera.h"
 #include "camera_3d.h"
 #include "sdl_canvas.h"
-#include "plasticity/geometry/matrix4.h"
+#include "geometry/matrix4.h"
 
 using Quad = std::tuple<Vector3, Vector3, Vector3, Vector3>;
 

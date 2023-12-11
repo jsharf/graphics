@@ -1,0 +1,4 @@
+[wrap-git]
+url = https://github.com/jsharf/plasticity.git
+revision = head
+depth = 1

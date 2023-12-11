@@ -3,7 +3,7 @@
 #include "types.h"
 #include "canvas.h"
 #include "scene.h"
-#include "plasticity/geometry/matrix4.h"
+#include "geometry/matrix4.h"
 
 class Camera {
   public:
